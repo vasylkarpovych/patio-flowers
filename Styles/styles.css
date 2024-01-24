@@ -1,0 +1,66 @@
+/* :root та html тут буде одне й те саме, тільки вага буде різна */
+:root {
+  --color-brand-primary-rose: #ffb3db;
+  --color-brand-dark: #1e022d;
+  --color-white: #ffffff;
+}
+
+/* Base / global styles */
+
+body {
+  color: var(--color-brand-dark);
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* button styles */
+
+.button {
+  color: var(--color-white);
+  background-color: var(--color-brand-primary-rose);
+  border: 2px solid var(--color-brand-dark);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-brand-dark);
+  background-color: transparent;
+}
+
+/* .button:active {
+  background-color: #ff1010a8;
+} */
+
+/* link styles */
+
+.nav-link {
+  color: var(--color-brand-dark);
+}
+
+.nav-link:hover {
+  color: var(--color-brand-dark);
+}
+
+/* hero section */
+
+.hero-title {
+  /* color: var(--color-brand-primary-rose); */
+}
+
+.hero-title .accent {
+  color: var(--color-brand-primary-rose);
+}
+
+/* Advantages section */
+
+.advantages-list {
+  color: var(--color-white);
+  background-color: var(--color-brand-dark);
+}
+
+.section-title .accent {
+  color: var(--color-brand-primary-rose);
+}

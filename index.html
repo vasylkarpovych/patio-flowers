@@ -4,34 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">Patio</title>
+
+    <link rel="stylesheet" href="/Styles/styles.css" />
   </head>
   <body>
     <header>
       <nav>
         <!-- logo -->
         <a href="/">
-          <img src="./images/logoPatio.svg" alt="Логотип магазину квітів PATIO" />
+          <img
+            src="./images/logoPatio.svg"
+            alt="Логотип магазину квітів PATIO"
+            style="background-color: #ffb4dc"
+          />
           <!-- <img src="https://picsum.photos/seed/picsum/600/300" alt="Логотип магазину квітів PATIO"> -->
         </a>
         <ul>
           <li>
-            <a href="#traditions-section" target="_blank">Про нас: наші традиції</a>
+            <a class="nav-link" href="#traditions-section">Про нас: наші традиції</a>
           </li>
-          <li><a href="#promotions-and-news-section">Акції та новинки</a></li>
-          <li><a href="#flowers-section">Букети</a></li>
-          <li><a href="#contact-section">Контакти</a></li>
+          <li>
+            <a class="nav-link" href="#promotions-and-news-section">Акції та новинки</a>
+          </li>
+          <li><a class="nav-link" href="#flowers-section">Букети</a></li>
+          <li><a class="nav-link" href="#contact-section">Контакти</a></li>
         </ul>
       </nav>
-      <button type="button">Замовити дзвінок</button>
+      <button type="button" class="button">Замовити дзвінок</button>
       <!-- кнопка замовити дзвінок -->
     </header>
     <main>
       <!-- весь сайт -->
       <section>
-        <h1 lang="en">PATIO</h1>
+        <h1 class="hero-title"><span class="accent">PATIO</span> твій стильний букет</h1>
       </section>
       <section id="traditions-section">
-        <ul>
+        <ul class="advantages-list">
           <li>Великий досвід на ринку</li>
           <li>Доступні за д.южетом формати</li>
           <li>Досвідчена команда</li>
@@ -48,7 +56,7 @@
         <img src="./images/flowers1.jpg" alt="Фото з красивим букетом" />
       </section>
       <section id="promotions-and-news-section">
-        <h2>Акції та новинки</h2>
+        <h2 class="section-title"><span class="accent">Акції</span> та новинки</h2>
         <!-- Продумати як зробити і доставку і кульки  -->
         <!-- Безкоштовна доставка від 800 грн -->
         <ul>
@@ -70,7 +78,7 @@
         </ul>
       </section>
       <section id="flowers-section">
-        <h2>Букети</h2>
+        <h2 class="section-title">Букети</h2>
         <ul>
           <li>
             <article><h3>Букет 1</h3></article>
@@ -84,11 +92,11 @@
         </ul>
       </section>
       <section id="contact-section">
-        <h2>Замовляйте кращі букети, для кращих людей</h2>
+        <h2 class="section-title">Замовляйте кращі букети, для кращих людей</h2>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d660.7752866186479!2d34.60718973213557!3d48.5121256963702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbdb08bfdddced%3A0x3f12f1951abb2db!2z0LLRg9C70LjRhtGPINCh0LDRh9C60LAsIDksINCa0LDQvOKAmdGP0L3RgdGM0LrQtSwg0JTQvdGW0L_RgNC-0L_QtdGC0YDQvtCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDUxOTA5!5e0!3m2!1suk!2sua!4v1705795146091!5m2!1suk!2sua"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1321.5495297541788!2d34.60722460362146!3d48.5121657044179!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbdbeeeaf805fd%3A0x6e16a081bfaa23f0!2z0LrQstGW0YLQutC-0LLQsCDRgdGC0YPQtNGW0Y8gUEFUSU8!5e0!3m2!1suk!2sua!4v1706095197697!5m2!1suk!2sua"
           width="600"
-          height="600"
+          height="450"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
@@ -99,10 +107,14 @@
     <footer>
       <nav>
         <a href="#">
-          <img src="./images/logoPatio.svg" alt="Логотип магазину квітів PATIO" />
+          <img
+            src="./images/logoPatio.svg"
+            alt="Логотип магазину квітів PATIO"
+            style="background-color: #ffb4dc"
+          />
         </a>
         <ul>
-          <li><a href="#traditions-section" target="_blank">Про нас</a></li>
+          <li><a href="#traditions-section">Про нас: наші традиції</a></li>
           <li><a href="#promotions-and-news-section">Акції та новинки</a></li>
           <li><a href="#flowers-section">Букети</a></li>
           <li><a href="#contact-section">Контакти</a></li>
