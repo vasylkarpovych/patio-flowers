@@ -1,3 +1,28 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 300;
+  src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 400;
+  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 600;
+  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 900;
+  src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
+}
+
 /* :root та html тут буде одне й те саме, тільки вага буде різна */
 :root {
   --color-brand-primary-rose: #ffb3db;
@@ -9,6 +34,15 @@
 
 body {
   color: var(--color-brand-dark);
+  /* font-family: 'comic sans ms', sans-serif; */
+  font-family: 'poppins', sans-serif;
+  tab-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+address {
+  font-style: normal;
 }
 
 ul {
@@ -20,6 +54,7 @@ ul {
 .button {
   color: var(--color-white);
   background-color: var(--color-brand-primary-rose);
+  font-weight: 600;
   border: 2px solid var(--color-brand-dark);
   border-radius: 8px;
   cursor: pointer;
@@ -38,16 +73,21 @@ ul {
 
 .nav-link {
   color: var(--color-brand-dark);
+  text-decoration: none;
 }
 
 .nav-link:hover {
-  color: var(--color-brand-dark);
+  color: var(--color-brand-primary-rose);
+  font-weight: 600;
 }
 
 /* hero section */
 
 .hero-title {
-  /* color: var(--color-brand-primary-rose); */
+  text-align: center;
+  /* text-transform: capitalize; */
+  font-size: 70px;
+  font-weight: 900;
 }
 
 .hero-title .accent {
@@ -61,6 +101,58 @@ ul {
   background-color: var(--color-brand-dark);
 }
 
+.advantages-item {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.section-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
 .section-title .accent {
   color: var(--color-brand-primary-rose);
+}
+
+/* Sale section, promotions and news  */
+
+.sale-text span {
+  color: var(--color-brand-primary-rose);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.promotions-news-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* fwovers */
+.flowers-card {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.format-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Footer. Adress link */
+.address-link {
+  color: var(--color-brand-dark);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.address-link:hover {
+  color: var(--color-brand-primary-rose);
+  font-size: 18px;
+}
+
+.address-copyright {
+  font-size: 14px;
 }

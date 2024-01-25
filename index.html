@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">Patio</title>
-
+    <!-- Fonts підключення, поки в мене інший шрифт -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
+      rel="stylesheet" -->
+    />
+    <!-- Styles підключення -->
     <link rel="stylesheet" href="/Styles/styles.css" />
   </head>
   <body>
@@ -21,7 +28,7 @@
         </a>
         <ul>
           <li>
-            <a class="nav-link" href="#traditions-section">Про нас: наші традиції</a>
+            <a class="nav-link" href="#sale-section">Про нас: наші традиції</a>
           </li>
           <li>
             <a class="nav-link" href="#promotions-and-news-section">Акції та новинки</a>
@@ -36,13 +43,16 @@
     <main>
       <!-- весь сайт -->
       <section>
-        <h1 class="hero-title"><span class="accent">PATIO</span> твій стильний букет</h1>
+        <h1 class="hero-title">
+          <span class="accent">PATIO</span><br />
+          твій стильний букет
+        </h1>
       </section>
-      <section id="traditions-section">
+      <section id="sale-section">
         <ul class="advantages-list">
-          <li>Великий досвід на ринку</li>
-          <li>Доступні за д.южетом формати</li>
-          <li>Досвідчена команда</li>
+          <li class="advantages-item">Великий досвід на ринку</li>
+          <li class="advantages-item">Доступні за д.южетом формати</li>
+          <li class="advantages-item">Досвідчена команда</li>
         </ul>
         <h2>Букети, які приємно дарувати</h2>
         <p>
@@ -62,15 +72,17 @@
         <ul>
           <li>
             <article>
-              <h3>Безкоштовна доставка</h3>
-              <p>акція!</p>
-              <p>Зроби замовлення від 800 грн. та отримай безкоштовну доставку</p>
+              <h3 class="promotions-news-title">Безкоштовна доставка</h3>
+              <p class="sale-text">
+                <span>акція!</span> Зроби замовлення від 800 грн. та отримай безкоштовну
+                доставку
+              </p>
               <p>доставка до 800 грн оплачується за тарифами таксі</p>
             </article>
           </li>
           <li>
             <article>
-              <h3>Повітряні кульки</h3>
+              <h3 class="promotions-news-title">Повітряні кульки</h3>
               <p>Наші гелеві кульки подарують Вам найкращий настрій</p>
               <p>величезний осортимент повітряних кульок</p>
             </article>
@@ -81,18 +93,43 @@
         <h2 class="section-title">Букети</h2>
         <ul>
           <li>
-            <article><h3>Букет 1</h3></article>
+            <article>
+              <h3 class="flowers-card" lang="en">flowers 1</h3>
+              <div class="format-text">
+                <p>гарні квіти, та їх опис 1</p>
+                <p>гарні квіти, та їх опис 2</p>
+                <p>гарні квіти, та їх опис 3</p>
+                <p>гарні квіти, та їх опис 4</p>
+              </div>
+            </article>
           </li>
           <li>
-            <article><h3>Букет 2</h3></article>
+            <article>
+              <h3 class="flowers-card" lang="en">flowers 2</h3>
+              <div class="format-text">
+                <p>гарні квіти, та їх опис 1</p>
+                <p>гарні квіти, та їх опис 2</p>
+                <p>гарні квіти, та їх опис 3</p>
+                <p>гарні квіти, та їх опис 4</p>
+              </div>
+            </article>
           </li>
           <li>
-            <article><h3>Букет 3</h3></article>
+            <article>
+              <h3 class="flowers-card" lang="en">flowers 3</h3>
+              <div class="format-text">
+                <p>гарні квіти, та їх опис 1</p>
+                <p>гарні квіти, та їх опис 2</p>
+                <p>гарні квіти, та їх опис 3</p>
+                <p>гарні квіти, та їх опис 4</p>
+              </div>
+            </article>
           </li>
         </ul>
       </section>
       <section id="contact-section">
         <h2 class="section-title">Замовляйте кращі букети, для кращих людей</h2>
+        <p>Заповни форму, щоб ми зв'язалтсь з тобою!</p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1321.5495297541788!2d34.60722460362146!3d48.5121657044179!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbdbeeeaf805fd%3A0x6e16a081bfaa23f0!2z0LrQstGW0YLQutC-0LLQsCDRgdGC0YPQtNGW0Y8gUEFUSU8!5e0!3m2!1suk!2sua!4v1706095197697!5m2!1suk!2sua"
           width="600"
@@ -114,19 +151,33 @@
           />
         </a>
         <ul>
-          <li><a href="#traditions-section">Про нас: наші традиції</a></li>
-          <li><a href="#promotions-and-news-section">Акції та новинки</a></li>
-          <li><a href="#flowers-section">Букети</a></li>
-          <li><a href="#contact-section">Контакти</a></li>
+          <li>
+            <a class="nav-link" href="#sale-section">Про нас: наші традиції</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#promotions-and-news-section">Акції та новинки</a>
+          </li>
+          <li><a class="nav-link" href="#flowers-section">Букети</a></li>
+          <li><a class="nav-link" href="#contact-section">Контакти</a></li>
         </ul>
       </nav>
 
       <address>
         <ul>
-          <li><a href="tel:+380937470383">+38 (093) 747 03 83</a></li>
-          <li><a href="mailto:2024sale.gmail.com">2024sale.gmail.com</a></li>
           <li>
-            <a href="https://maps.app.goo.gl/81zjKEYFFqcCadK99" target="_blank">
+            <a class="address-link" href="tel:+380937470383">+38 (093) 747 03 83</a>
+          </li>
+          <li>
+            <a class="address-link" href="mailto:2024sale.gmail.com"
+              >2024sale.gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="address-link"
+              href="https://maps.app.goo.gl/81zjKEYFFqcCadK99"
+              target="_blank"
+            >
               Украіна, м.Кам'янське, вул.Медична 9
             </a>
           </li>
@@ -141,8 +192,8 @@
             </a>
           </li>
         </ul>
-        <a href="#" target="_blank">Політика конфеденційності</a>
-        <p>&copy; 2024 Дані захищені</p>
+        <a class="address-link" href="#" target="_blank">Політика конфеденційності</a>
+        <p class="address-copyright">&copy; 2024 Дані захищені</p>
       </address>
     </footer>
   </body>
