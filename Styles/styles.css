@@ -32,6 +32,10 @@
 
 /* Base / global styles */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-brand-dark);
   /* font-family: 'comic sans ms', sans-serif; */
@@ -39,6 +43,17 @@ body {
   tab-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 
 address {
@@ -49,9 +64,30 @@ ul {
   list-style-type: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 /* button styles */
 
 .button {
+  padding: 16px 32px;
   color: var(--color-white);
   background-color: var(--color-brand-primary-rose);
   font-weight: 600;
@@ -83,7 +119,12 @@ ul {
 
 /* hero section */
 
+.hero-section {
+  padding: 272px 0;
+}
+
 .hero-title {
+  margin-bottom: 0;
   text-align: center;
   /* text-transform: capitalize; */
   font-size: 70px;
@@ -118,6 +159,14 @@ ul {
 
 /* Sale section, promotions and news  */
 
+.sale-section {
+  padding-top: 96px;
+}
+
+.sale-title {
+  margin-bottom: 42px;
+}
+
 .sale-text span {
   color: var(--color-brand-primary-rose);
   text-transform: uppercase;
@@ -125,8 +174,13 @@ ul {
 }
 
 .promotions-news-title {
+  margin-bottom: 16px;
   font-size: 40px;
   font-weight: 600;
+}
+
+.promotions-title {
+  margin-bottom: 80px;
 }
 
 /* fwovers */
@@ -138,6 +192,16 @@ ul {
 .format-text {
   font-size: 14px;
   font-weight: 300;
+}
+
+.flowers-title {
+  margin-bottom: 80px;
+}
+
+/* Contact section */
+
+.contact-title {
+  margin-bottom: 16px;
 }
 
 /* Footer. Adress link */
