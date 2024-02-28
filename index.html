@@ -15,31 +15,38 @@
     <link rel="stylesheet" href="/Styles/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav>
-          <!-- logo -->
-          <a href="/">
-            <img
-              src="./images/logoPatio.svg"
-              alt="Логотип магазину квітів PATIO"
-              style="background-color: #ffb4dc"
-            />
-            <!-- <img src="https://picsum.photos/seed/picsum/600/300" alt="Логотип магазину квітів PATIO"> -->
-          </a>
-          <ul>
-            <li>
-              <a class="nav-link" href="#sale-section">Про нас: наші традиції</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#promotions-and-news-section">Акції та новинки</a>
-            </li>
-            <li><a class="nav-link" href="#flowers-section">Букети</a></li>
-            <li><a class="nav-link" href="#contact-section">Контакти</a></li>
-          </ul>
-        </nav>
-        <button type="button" class="button">Замовити дзвінок</button>
-        <!-- кнопка замовити дзвінок -->
+        <div class="header-container">
+          <nav class="header-nav">
+            <!-- logo -->
+            <a href="/">
+              <img
+                src="./images/logoPatio7777777.png"
+                alt="Логотип магазину квітів PATIO"
+              />
+              <!-- <img src="https://picsum.photos/seed/picsum/600/300" alt="Логотип магазину квітів PATIO"> -->
+            </a>
+            <ul class="header-menu">
+              <li>
+                <a class="nav-link" href="#sale-section">Про нас: наші традиції</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#promotions-and-news-section"
+                  >Акції та новинки</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="#flowers-section">Букети</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#contact-section">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="button">Замовити дзвінок</button>
+          <!-- кнопка замовити дзвінок -->
+        </div>
       </div>
     </header>
     <main>
@@ -52,29 +59,33 @@
           </h1>
         </div>
       </section>
-      <section>
+      <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="advantages-list">
             <li class="advantages-item">Великий досвід на ринку</li>
-            <li class="advantages-item">Доступні за д.южетом формати</li>
+            <li class="advantages-item">Доступні за бюжетом формати</li>
             <li class="advantages-item">Досвідчена команда</li>
           </ul>
         </div>
       </section>
       <section class="sale-section section" id="sale-section">
         <div class="container">
-          <h2 class="sale-title section-title">Букети, які приємно дарувати</h2>
-          <p>
-            <span>Стильні, трендові, актуальні букети</span> в яких закохуєшся з першого
-            погляду. Подаруй коханій людині більше ніж квіти
-          </p>
-          <p>
-            Найшвидкіша доставка міста,
-            <span>5 хвитлин, і букет готовий.</span> Залишилось тільки отримати не тільки
-            букет, але й задоволення
-          </p>
-          <img src="./images/flowers1.jpg" alt="Фото з красивим букетом" />
+          <div class="sales-container">
+            <div class="sales-content">
+              <h2 class="sale-title section-title">Букети, які приємно дарувати</h2>
+              <p class="sale-text">
+                <span>Стильні, трендові, актуальні букети</span> в яких закохуєшся з
+                першого погляду. Подаруй коханій людині більше ніж квіти
+              </p>
+              <p class="sale-text sale-text-limited">
+                Найшвидкіша доставка міста,
+                <span>5 хвитлин, і букет готовий.</span> Залишилось тільки отримати не
+                тільки букет, але й задоволення
+              </p>
+            </div>
+            <img src="./images/flowers1.jpg" alt="Фото з красивим букетом" />
+          </div>
         </div>
       </section>
       <section class="section" id="promotions-and-news-section">
@@ -108,37 +119,43 @@
       <section class="section" id="flowers-section">
         <div class="container">
           <h2 class="flowers-title section-title">Букети</h2>
-          <ul>
-            <li>
-              <article>
+          <ul class="flowers-list">
+            <li class="flowers-item">
+              <article class="format-card">
                 <h3 class="flowers-card" lang="en">flowers 1</h3>
                 <div class="format-text">
                   <p>гарні квіти, та їх опис 1</p>
                   <p>гарні квіти, та їх опис 2</p>
-                  <p>гарні квіти, та їх опис 3</p>
-                  <p>гарні квіти, та їх опис 4</p>
+                  <p>
+                    гарні квіти, та їх опис 3 гарні квіти, та їх опис 3 гарні квіти, та їх
+                    опис 4
+                  </p>
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="flowers-item">
+              <article class="format-card">
                 <h3 class="flowers-card" lang="en">flowers 2</h3>
                 <div class="format-text">
                   <p>гарні квіти, та їх опис 1</p>
                   <p>гарні квіти, та їх опис 2</p>
-                  <p>гарні квіти, та їх опис 3</p>
-                  <p>гарні квіти, та їх опис 4</p>
+                  <p>
+                    гарні квіти, та їх опис 3 гарні квіти, та їх опис 3 гарні квіти, та їх
+                    опис 4
+                  </p>
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="flowers-item">
+              <article class="format-card">
                 <h3 class="flowers-card" lang="en">flowers 3</h3>
                 <div class="format-text">
                   <p>гарні квіти, та їх опис 1</p>
                   <p>гарні квіти, та їх опис 2</p>
-                  <p>гарні квіти, та їх опис 3</p>
-                  <p>гарні квіти, та їх опис 4</p>
+                  <p>
+                    гарні квіти, та їх опис 3 гарні квіти, та їх опис 3 гарні квіти, та їх
+                    опис 4
+                  </p>
                 </div>
               </article>
             </li>
