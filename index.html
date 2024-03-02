@@ -21,10 +21,7 @@
           <nav class="header-nav">
             <!-- logo -->
             <a href="/">
-              <img
-                src="./images/logoPatio7777777.png"
-                alt="Логотип магазину квітів PATIO"
-              />
+              <img src="./images/logoPatio555.svg" alt="Логотип магазину квітів PATIO" />
               <!-- <img src="https://picsum.photos/seed/picsum/600/300" alt="Логотип магазину квітів PATIO"> -->
             </a>
             <ul class="header-menu">
@@ -90,7 +87,7 @@
       </section>
       <section class="section" id="promotions-and-news-section">
         <div class="container">
-          <h2 class="promotions-title section-title">
+          <h2 class="promotions-title section-title centered">
             <span class="accent">Акції</span> та новинки
           </h2>
           <!-- Продумати як зробити і доставку і кульки  -->
@@ -98,6 +95,11 @@
           <ul>
             <li>
               <article>
+                <img
+                  class="sale-image"
+                  src="./images/dilivery1.jpg"
+                  alt="Free dilivery"
+                />
                 <h3 class="promotions-news-title">Безкоштовна доставка</h3>
                 <p class="sale-text">
                   <span>акція!</span> Зроби замовлення від 800 грн. та отримай безкоштовну
@@ -108,6 +110,7 @@
             </li>
             <li>
               <article>
+                <img class="sale-image" src="./images/dilivery2.jpeg" alt="boble" />
                 <h3 class="promotions-news-title">Повітряні кульки</h3>
                 <p>Наші гелеві кульки подарують Вам найкращий настрій</p>
                 <p>величезний осортимент повітряних кульок</p>
@@ -118,7 +121,12 @@
       </section>
       <section class="section" id="flowers-section">
         <div class="container">
-          <h2 class="flowers-title section-title">Букети</h2>
+          <h2 class="flowers-title section-title centered">Букети</h2>
+          <button class="carousel-button" type="button">
+            <svg width="44" height="44">
+              <use href="./images/icon/icons.svg#icon-circle-left"></use>
+            </svg>
+          </button>
           <ul class="flowers-list">
             <li class="flowers-item">
               <article class="format-card">
@@ -160,6 +168,11 @@
               </article>
             </li>
           </ul>
+          <button class="carousel-button" type="button">
+            <svg width="44" height="44">
+              <use href="./images/icon/icons.svg#icon-circle-right"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="section" id="contact-section">
@@ -180,15 +193,11 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <nav>
           <a href="#">
-            <img
-              src="./images/logoPatio.svg"
-              alt="Логотип магазину квітів PATIO"
-              style="background-color: #ffb4dc"
-            />
+            <img src="./images/logoPatio555.svg" alt="Логотип магазину квітів PATIO" />
           </a>
           <ul>
             <li>
@@ -222,13 +231,19 @@
               </a>
             </li>
             <li>
+              <!-- facebook icon -->
               <a href="#">
-                <!-- facebook icon -->
+                <svg class="address-icon" width="32" height="32">
+                  <use href="./images/icon/icons.svg#icon-facebook"></use>
+                </svg>
               </a>
             </li>
             <li>
+              <!-- instagram icon width="32" heigth="32" -->
               <a href="#">
-                <!-- instagram icon -->
+                <svg class="address-icon" width="32" height="32">
+                  <use href="./images/icon/icons.svg#icon-instagram"></use>
+                </svg>
               </a>
             </li>
           </ul>
