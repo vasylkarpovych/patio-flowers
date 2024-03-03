@@ -26,15 +26,50 @@
   background-color: hsl(0, 100%, 55%);
   border: 5px solid rgb(150, 0, 0);
   transform: translate(-110px, 110px);
+  transition: background-color 1s, color 1s, font-size 1s;
+}
+
+.item.red:hover {
+  background-color: rgb(255, 0, 170);
+  font-size: 50px;
+  color: #ffffff;
 }
 
 .item.green {
   position: static;
   width: 200px;
   height: 200px;
-  background-color: #4eff2a;
   border: 5px solid #168100;
-  transform: rotate(70deg);
+  background-color: #4eff2a;
+
+  /* animation-name: spin;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite; */
+  /* animation-timing-function: ease-in; */
+
+  /* анімація скорочений запис  */
+  /* animation: spin 2s 3s infinite; */
+}
+
+/* на ховері анімація становиться на паузу */
+.item.green:hover {
+  animation-play-state: paused;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+    background-color: #4eff2a;
+  }
+  50% {
+    transform: rotate(55deg);
+    background-color: #fbff00;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: #4eff2a;
+  }
 }
 
 .item.blue {
