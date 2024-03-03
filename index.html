@@ -41,7 +41,7 @@
               </li>
             </ul>
           </nav>
-          <button type="button" class="button">Замовити дзвінок</button>
+          <button type="button" class="button modal-btn-open">Замовити дзвінок</button>
           <!-- кнопка замовити дзвінок -->
         </div>
       </div>
@@ -78,7 +78,7 @@
               <p class="sale-text sale-text-limited">
                 Найшвидкіша доставка міста,
                 <span>5 хвитлин, і букет готовий.</span> Залишилось тільки отримати не
-                тільки букет, але й задоволення
+                лише букет, але й задоволення
               </p>
             </div>
             <img src="./images/flowers1.jpg" alt="Фото з красивим букетом" />
@@ -88,32 +88,41 @@
       <section class="section" id="promotions-and-news-section">
         <div class="container">
           <h2 class="promotions-title section-title centered">
-            <span class="accent">Акції</span> та новинки
+            <span class="accent">Акції</span> та <br />
+            новинки
           </h2>
           <!-- Продумати як зробити і доставку і кульки  -->
           <!-- Безкоштовна доставка від 800 грн -->
-          <ul>
-            <li>
-              <article>
+          <ul class="promotions-and-news-list">
+            <li class="promotions-and-news-item">
+              <article class="promotions-card">
                 <img
                   class="sale-image"
                   src="./images/dilivery1.jpg"
                   alt="Free dilivery"
                 />
-                <h3 class="promotions-news-title">Безкоштовна доставка</h3>
-                <p class="sale-text">
-                  <span>акція!</span> Зроби замовлення від 800 грн. та отримай безкоштовну
-                  доставку
-                </p>
-                <p>доставка до 800 грн оплачується за тарифами таксі</p>
+                <div>
+                  <h3 class="promotions-news-title">Безкоштовна доставка</h3>
+                  <div class="promotions-text">
+                    <p class="sale-text">
+                      <span>акція!</span> Зроби замовлення <br />
+                      від 800 грн. та отримай безкоштовну доставку
+                    </p>
+                    <p>доставка до 800 грн оплачується за тарифами таксі</p>
+                  </div>
+                </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="promotions-and-news-item">
+              <article class="promotions-card">
                 <img class="sale-image" src="./images/dilivery2.jpeg" alt="boble" />
-                <h3 class="promotions-news-title">Повітряні кульки</h3>
-                <p>Наші гелеві кульки подарують Вам найкращий настрій</p>
-                <p>величезний осортимент повітряних кульок</p>
+                <div>
+                  <h3 class="promotions-news-title">Повітряні кульки</h3>
+                  <div class="promotions-text">
+                    <p>Наші гелеві кульки подарують Вам найкращий настрій</p>
+                    <p>величезний осортимент повітряних кульок</p>
+                  </div>
+                </div>
               </article>
             </li>
           </ul>
@@ -122,135 +131,166 @@
       <section class="section" id="flowers-section">
         <div class="container">
           <h2 class="flowers-title section-title centered">Букети</h2>
-          <button class="carousel-button" type="button">
-            <svg width="44" height="44">
-              <use href="./images/icon/icons.svg#icon-circle-left"></use>
-            </svg>
-          </button>
-          <ul class="flowers-list">
-            <li class="flowers-item">
-              <article class="format-card">
-                <h3 class="flowers-card" lang="en">flowers 1</h3>
-                <div class="format-text">
-                  <p>гарні квіти, та їх опис 1</p>
-                  <p>гарні квіти, та їх опис 2</p>
-                  <p>
-                    гарні квіти, та їх опис 3 гарні квіти, та їх опис 3 гарні квіти, та їх
-                    опис 4
-                  </p>
-                </div>
-              </article>
-            </li>
-            <li class="flowers-item">
-              <article class="format-card">
-                <h3 class="flowers-card" lang="en">flowers 2</h3>
-                <div class="format-text">
-                  <p>гарні квіти, та їх опис 1</p>
-                  <p>гарні квіти, та їх опис 2</p>
-                  <p>
-                    гарні квіти, та їх опис 3 гарні квіти, та їх опис 3 гарні квіти, та їх
-                    опис 4
-                  </p>
-                </div>
-              </article>
-            </li>
-            <li class="flowers-item">
-              <article class="format-card">
-                <h3 class="flowers-card" lang="en">flowers 3</h3>
-                <div class="format-text">
-                  <p>гарні квіти, та їх опис 1</p>
-                  <p>гарні квіти, та їх опис 2</p>
-                  <p>
-                    гарні квіти, та їх опис 3 гарні квіти, та їх опис 3 гарні квіти, та їх
-                    опис 4
-                  </p>
-                </div>
-              </article>
-            </li>
-          </ul>
-          <button class="carousel-button" type="button">
-            <svg width="44" height="44">
-              <use href="./images/icon/icons.svg#icon-circle-right"></use>
-            </svg>
-          </button>
+          <div class="flowers-container">
+            <button class="carousel-button" type="button">
+              <svg width="44" height="44">
+                <use href="./images/icon/icons.svg#icon-circle-left"></use>
+              </svg>
+            </button>
+            <div>
+              <ul class="flowers-list">
+                <li class="flowers-item">
+                  <article class="format-card">
+                    <h3 class="flowers-card" lang="en">flowers 1</h3>
+                    <div class="format-text">
+                      <p>гарні квіти, та їх опис 1</p>
+                      <p>гарні квіти, та їх опис 2</p>
+                      <p>
+                        гарні квіти, та їх опис 3 гарні квіти, та їх опис 3 гарні квіти,
+                        та їх опис 4
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="flowers-item">
+                  <article class="format-card">
+                    <h3 class="flowers-card" lang="en">flowers 2</h3>
+                    <div class="format-text">
+                      <p>гарні квіти, та їх опис 1</p>
+                      <p>гарні квіти, та їх опис 2</p>
+                      <p>
+                        гарні квіти, та їх опис 3 гарні квіти, та їх опис 3 гарні квіти,
+                        та їх опис 4
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li class="flowers-item">
+                  <article class="format-card">
+                    <h3 class="flowers-card" lang="en">flowers 3</h3>
+                    <div class="format-text">
+                      <p>гарні квіти, та їх опис 1</p>
+                      <p>гарні квіти, та їх опис 2</p>
+                      <p>
+                        гарні квіти, та їх опис 3 гарні квіти, та їх опис 3 гарні квіти,
+                        та їх опис 4
+                      </p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+            <button class="carousel-button" type="button">
+              <svg width="44" height="44">
+                <use href="./images/icon/icons.svg#icon-circle-right"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
-      <section class="section" id="contact-section">
+      <section class="section contact-section" id="contact-section">
         <div class="container">
-          <h2 class="contact-title section-title">
-            Замовляйте кращі букети, для кращих людей
-          </h2>
-          <p>Заповни форму, щоб ми зв'язалтсь з тобою!</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1321.5495297541788!2d34.60722460362146!3d48.5121657044179!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbdbeeeaf805fd%3A0x6e16a081bfaa23f0!2z0LrQstGW0YLQutC-0LLQsCDRgdGC0YPQtNGW0Y8gUEFUSU8!5e0!3m2!1suk!2sua!4v1706095197697!5m2!1suk!2sua"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="contact-container">
+            <div class="contact-form">
+              <h2 class="contact-title section-title">
+                Замовляйте кращі букети, для кращих людей
+              </h2>
+              <p>Заповни форму, щоб ми зв'язалтсь з тобою!</p>
+              <!-- Form -->
+            </div>
+            <iframe
+              class="contact-map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1321.5495297541788!2d34.60722460362146!3d48.5121657044179!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbdbeeeaf805fd%3A0x6e16a081bfaa23f0!2z0LrQstGW0YLQutC-0LLQsCDRgdGC0YPQtNGW0Y8gUEFUSU8!5e0!3m2!1suk!2sua!4v1706095197697!5m2!1suk!2sua"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <nav>
-          <a href="#">
-            <img src="./images/logoPatio555.svg" alt="Логотип магазину квітів PATIO" />
-          </a>
-          <ul>
-            <li>
-              <a class="nav-link" href="#sale-section">Про нас: наші традиції</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#promotions-and-news-section">Акції та новинки</a>
-            </li>
-            <li><a class="nav-link" href="#flowers-section">Букети</a></li>
-            <li><a class="nav-link" href="#contact-section">Контакти</a></li>
-          </ul>
-        </nav>
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <div class="footer-logo">
+              <a href="#">
+                <img
+                  src="./images/logoPatio555.svg"
+                  alt="Логотип магазину квітів PATIO"
+                />
+              </a>
+            </div>
+            <ul class="footer-menu">
+              <li>
+                <a class="nav-link" href="#sale-section">Про нас: наші традиції</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#promotions-and-news-section"
+                  >Акції та новинки</a
+                >
+              </li>
+              <li><a class="nav-link" href="#flowers-section">Букети</a></li>
+              <li><a class="nav-link" href="#contact-section">Контакти</a></li>
+            </ul>
+          </nav>
 
-        <address>
-          <ul>
-            <li>
-              <a class="address-link" href="tel:+380937470383">+38 (093) 747 03 83</a>
-            </li>
-            <li>
-              <a class="address-link" href="mailto:2024sale.gmail.com"
-                >2024sale.gmail.com</a
+          <address class="footer-address">
+            <ul class="address-list">
+              <li>
+                <a class="address-link" href="tel:+380937470383">+38 (093) 747 03 83</a>
+              </li>
+              <li>
+                <a class="address-link" href="mailto:2024sale.gmail.com"
+                  >2024sale.gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="address-link"
+                  href="https://maps.app.goo.gl/81zjKEYFFqcCadK99"
+                  target="_blank"
+                >
+                  Украіна, м.Кам'янське, вул.Медична 9
+                </a>
+              </li>
+              <li>
+                <!-- facebook icon -->
+                <a href="#">
+                  <svg class="address-icon" width="32" height="32">
+                    <use href="./images/icon/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <!-- instagram icon width="32" heigth="32" -->
+                <a href="#">
+                  <svg class="address-icon" width="32" height="32">
+                    <use href="./images/icon/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="address-info-copyright">
+              <a class="address-link" href="#" target="_blank"
+                >Політика конфеденційності</a
               >
-            </li>
-            <li>
-              <a
-                class="address-link"
-                href="https://maps.app.goo.gl/81zjKEYFFqcCadK99"
-                target="_blank"
-              >
-                Украіна, м.Кам'янське, вул.Медична 9
-              </a>
-            </li>
-            <li>
-              <!-- facebook icon -->
-              <a href="#">
-                <svg class="address-icon" width="32" height="32">
-                  <use href="./images/icon/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <!-- instagram icon width="32" heigth="32" -->
-              <a href="#">
-                <svg class="address-icon" width="32" height="32">
-                  <use href="./images/icon/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <a class="address-link" href="#" target="_blank">Політика конфеденційності</a>
-          <p class="address-copyright">&copy; 2024 Дані захищені</p>
-        </address>
+              <p class="address-copyright">&copy; 2024 Дані захищені</p>
+            </div>
+          </address>
+        </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

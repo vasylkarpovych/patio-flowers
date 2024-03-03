@@ -32,7 +32,9 @@
 
 /* Base / global styles */
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -54,6 +56,10 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+
+a {
+  display: inline-block;
 }
 
 address {
@@ -216,6 +222,29 @@ ul {
   margin-bottom: 42px;
 }
 
+.promotions-and-news-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 30px;
+}
+
+.promotions-card {
+  display: flex;
+  gap: 30px;
+}
+
+.promotions-and-news-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.promotions-text p {
+  margin-bottom: 24px;
+}
+
+.promotions-text p:last-child {
+  margin-bottom: 0;
+}
+
 .sale-text span {
   color: var(--color-brand-primary-rose);
   text-transform: uppercase;
@@ -247,16 +276,26 @@ ul {
 }
 
 .promotions-title {
-  max-width: 520px;
+  /* max-width: 520px; */
   margin: 0 auto 80px;
+  position: relative;
 }
 
 .promotions-title::after,
 .promotions-title::before {
-  display: block;
+  position: absolute;
   width: 360px;
   border: 2px solid var(--color-brand-dark);
   content: '';
+  bottom: 24px;
+}
+
+.promotions-title::before {
+  left: 0;
+}
+
+.promotions-title::after {
+  right: 0;
 }
 
 .sale-image {
@@ -267,6 +306,12 @@ ul {
 }
 
 /* fwovers */
+
+.flowers-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
 
 .flowers-list {
   display: flex;
@@ -321,6 +366,7 @@ ul {
   border-radius: 50%;
   border: 1px solid var(--color-brand-dark);
   fill: var(--color-brand-dark);
+  flex-shrink: 0;
 }
 
 .carousel-button:hover {
@@ -330,6 +376,10 @@ ul {
 
 /* Contact section */
 
+.contact-section {
+  padding-bottom: 96px;
+}
+
 .contact-title {
   margin-bottom: 16px;
 }
@@ -338,12 +388,75 @@ ul {
   fill: var(--color-brand-dark);
 }
 
+.contact-container {
+  display: flex;
+  gap: 30px;
+}
+
+.contact-map {
+  flex-shrink: 0;
+  border-radius: 16px;
+}
+
 /* Footer. Adress link */
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-menu,
+.footer-logo {
+  flex-basis: 50%;
+}
+
+.address-list,
+.address-info-copyright {
+  flex-basis: 50%;
+}
+
 .address-link {
   color: var(--color-white);
   text-decoration: none;
   font-size: 16px;
   font-weight: 300;
+}
+
+.footer {
+  position: relative;
+  padding: 30px;
+  background-image: url(../images/footerFlover.jpg);
+  background-color: #1e022d; /*якщо не прийде зображення, підстраховуюсь просто фоном-кольором*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  background-image: url(../images/decor-girl.png);
+  content: '';
+  width: 100px;
+  height: 180px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  bottom: -15px;
+}
+
+.footer::before {
+  left: 0px;
+}
+
+.footer::after {
+  right: 0;
 }
 
 .address-link:hover {
@@ -364,12 +477,38 @@ ul {
   font-size: 14px;
 }
 
-.footer {
-  background-image: url(../images/footerFlover.jpg);
-  background-color: #1e022d; /*якщо не прийде зображення, підстраховуюсь просто фоном-кольором*/
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+/* Modal window */
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 800px;
+  height: 880px;
+  background-color: var(--color-brand-dark);
+  border: 5px solid var(--color-brand-primary-rose);
+  border-radius: 40px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
 
 /* 
