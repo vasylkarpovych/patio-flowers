@@ -331,7 +331,7 @@
         <button class="modal-btn-close" type="button">Close</button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку, та наш спеціаліст зв'яжеться з Вами!</p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name">Ім'я</label>
             <input
@@ -340,30 +340,48 @@
               name="user-name"
               id="user-name"
               placeholder="Ім'я"
+              minlength="2"
+              maxlength="20"
+              required
             />
           </div>
           <div class="form-field">
-            <label class="form-label visually-hidden" for="user-tel">Телефон</label>
+            <label class="visually-hidden" for="user-tel">Телефон</label>
             <input
               class="form-input"
               type="tel"
               name="user-tel"
               id="user-tel"
+              pattern="^\+[0-9]{12}"
               placeholder="Телефон"
+              required
             />
           </div>
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-email"
-              >Електронна пошта</label
-            >
+              >Електронна пошта
+            </label>
             <input
               class="form-input"
               type="email"
               name="user-email"
               id="user-email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
+
+          <!-- <div class="checkbox">
+            <input
+              class="checkbox-input visually-hidden"
+              type="checkbox"
+              id="terms-condition"
+              name="terms-condition"
+            />
+            <label class="checkbox-label" for="terms-condition"
+              >Я точно погоджуюсь з політикою конфеденційності
+            </label>
+          </div> -->
 
           <button class="form-button button" type="submit">Замовити дзвінок</button>
 
