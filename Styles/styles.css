@@ -518,18 +518,91 @@ ul {
 .modal {
   position: relative;
   width: 100%;
-  max-width: 700px;
+  max-width: 800px;
   height: 100%;
-  max-height: 700px;
-  background-color: var(--color-brand-dark);
-  border: 5px solid var(--color-brand-primary-rose);
+  max-height: 800px;
+  background-color: var(--color-brand-primary-rose);
+  border: 5px solid var(--color-brand-dark);
   border-radius: 30px;
+  padding: 120px;
+  overflow-y: auto;
 }
 
 .modal-btn-close {
   position: absolute;
   top: 40px;
   right: 40px;
+}
+
+/* Form */
+
+.form-field {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.form-label {
+  position: absolute;
+  left: 40px;
+  top: 16px;
+}
+
+.form-input {
+  font-size: 16px;
+  line-height: 1.17;
+  padding: 16px 40px;
+  width: 100%;
+  border: 1px solid var(--color-white);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.form-input:focus {
+  border-color: var(--color-brand-dark);
+  outline: none;
+}
+
+.contact-section .form-input:focus {
+  border-color: var(--color-brand-dark);
+  outline: none;
+}
+
+.contact-section .form-input {
+  border: 1px solid var(--color-brand-primary-rose);
+}
+
+.contact-section .form-input::placeholder {
+  color: var(--color-brand-primary-rose);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input::placeholder {
+  color: var(--color-white);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input:focus::placeholder {
+  color: var(--color-brand-dark);
+}
+
+.form-button {
+  margin: 0 auto 24px;
+  display: block;
+}
+
+.form-terms {
+  margin: 0 auto;
+  font-weight: 500;
+  max-width: 220px;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.form-terms-link {
+  text-underline-offset: 3px;
 }
 
 /* 
