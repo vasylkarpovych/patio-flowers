@@ -16,11 +16,16 @@
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.format-card {
+.flover-gradient-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: relative;
   height: 444px;
   padding: 24px;
   /* background-image: url(../images/flover1.jpg); */
-  border: 3px solid lightgray; /* remove */
+  /* Тінь: */
+  /* box-shadow: 2px 2px 4px 4px blueviolet; */
   border-radius: 16px;
   background-image: linear-gradient(
     180deg,
@@ -28,8 +33,9 @@
     rgba(20, 0, 36, 0.4) 73%,
     var(--color-brand-dark)
   );
-  /* Тінь: */
-  /* box-shadow: 2px 2px 4px 4px blueviolet; */
+}
+
+.format-card {
   transition: transform 0.4s;
 }
 
@@ -38,15 +44,30 @@
 }
 
 .flowers-card {
+  color: var(--color-white);
+
   font-size: 24px;
   font-weight: 600;
 }
 
 .format-text {
+  color: var(--color-white);
   font-size: 14px;
   font-weight: 300;
 }
 
 .flowers-title {
+  color: var(--color-white);
   margin-bottom: 80px;
+}
+
+.flowers-image {
+  position: absolute;
+  border-radius: 16px;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
