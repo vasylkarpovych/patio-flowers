@@ -1,0 +1,23 @@
+/* Contact section */
+
+.contact-section {
+  padding-bottom: 96px;
+}
+
+.contact-title {
+  margin-bottom: 16px;
+}
+
+.carousel-arrow {
+  fill: var(--color-brand-dark);
+}
+
+.contact-container {
+  display: flex;
+  gap: 30px;
+}
+
+.contact-map {
+  flex-shrink: 0;
+  border-radius: 16px;
+}

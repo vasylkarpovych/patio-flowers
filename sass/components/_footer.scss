@@ -1,0 +1,78 @@
+/* Footer. Adress link */
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-menu,
+.footer-logo {
+  flex-basis: 50%;
+}
+
+.address-list,
+.address-info-copyright {
+  flex-basis: 50%;
+}
+
+.address-link {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.footer {
+  position: relative;
+  padding: 30px;
+  background-image: url(../images/footerFlover.jpg);
+  background-color: #1e022d; /*якщо не прийде зображення, підстраховуюсь просто фоном-кольором*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  background-image: url(../images/decor-girl.png);
+  content: '';
+  width: 100px;
+  height: 180px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  bottom: -15px;
+}
+
+.footer::before {
+  left: 0px;
+}
+
+.footer::after {
+  right: 0;
+}
+
+.address-link:hover {
+  color: var(--color-brand-primary-rose);
+  /* font-size: 18px;   ТУТ при наведенні збільшується розмір*/
+}
+
+.address-icon {
+  fill: var(--color-white);
+}
+
+.address-icon:hover {
+  fill: var(--color-brand-primary-rose);
+  /* stroke: var(--color-brand-primary-rose); */
+}
+
+.address-copyright {
+  font-size: 14px;
+}

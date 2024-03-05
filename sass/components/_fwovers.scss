@@ -1,0 +1,52 @@
+/* fwovers */
+
+.flowers-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.flowers-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.flowers-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.format-card {
+  height: 444px;
+  padding: 24px;
+  /* background-image: url(../images/flover1.jpg); */
+  border: 3px solid lightgray; /* remove */
+  border-radius: 16px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(20, 0, 36, 0) 55%,
+    rgba(20, 0, 36, 0.4) 73%,
+    var(--color-brand-dark)
+  );
+  /* Тінь: */
+  /* box-shadow: 2px 2px 4px 4px blueviolet; */
+  transition: transform 0.4s;
+}
+
+.format-card:hover {
+  transform: scale(110%);
+}
+
+.flowers-card {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.format-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.flowers-title {
+  margin-bottom: 80px;
+}

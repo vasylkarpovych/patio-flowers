@@ -1,0 +1,29 @@
+/* hero section */
+
+.hero-section {
+  padding: 200px 0;
+  background-image: linear-gradient(
+      130deg,
+      rgba(47, 0, 100, 0.25) 1%,
+      rgba(47, 0, 100, 0.2) 20%,
+      rgba(47, 0, 100, 0) 100%
+    ),
+    url(../images/backgroundRose.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 1400px;
+  background-attachment: fixed;
+}
+
+.hero-title {
+  margin-bottom: 0;
+  text-align: center;
+  /* text-transform: capitalize; */
+  font-size: 70px;
+  font-weight: 900;
+}
+
+.hero-title .accent {
+  color: var(--color-white);
+  font-size: 170%;
+}
