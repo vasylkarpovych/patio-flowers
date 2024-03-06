@@ -1,0 +1,26 @@
+.promotions-card {
+  display: flex;
+  gap: 30px;
+
+  &__photo {
+    //change name
+    max-width: 300px;
+    max-height: 450px;
+    border-radius: 5px 5px 5px 250px;
+    box-shadow: -16px 16px 0 0 white, -16px 16px 0 2px var(--color-brand-primary-rose);
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  &__text {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

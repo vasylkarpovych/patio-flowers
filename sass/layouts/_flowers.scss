@@ -1,0 +1,23 @@
+/* fwovers */
+
+.flowers {
+  &__title {
+    margin-bottom: 80px;
+  }
+
+  &__container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}

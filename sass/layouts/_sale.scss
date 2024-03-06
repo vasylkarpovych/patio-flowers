@@ -1,0 +1,29 @@
+/* Sale section, */
+
+.sale-section {
+  padding-top: 96px;
+
+  &__sales-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  & img {
+    width: 310px;
+  }
+
+  &__sales-content {
+    max-width: 710px;
+  }
+
+  &__sale-title {
+    margin-bottom: 42px;
+  }
+
+  &__text {
+    &--limited {
+      max-width: 370px;
+    }
+  }
+}

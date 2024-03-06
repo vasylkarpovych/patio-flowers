@@ -41,7 +41,7 @@
               </li>
             </ul>
           </nav>
-          <button type="button" class="button modal-btn-open">Замовити дзвінок</button>
+          <button type="button" class="button modal-btn-open-js">Замовити дзвінок</button>
           <!-- кнопка замовити дзвінок -->
         </div>
       </div>
@@ -72,7 +72,7 @@
         <div class="container">
           <div class="sale-section__sales-container">
             <div class="sale-section__sales-content">
-              <h2 class="sale-section__sale-title section-title">
+              <h2 class="sale-section__sale-title section__title">
                 Букети, які приємно дарувати
               </h2>
               <p>
@@ -85,7 +85,7 @@
               <p class="sale-section__text--limited">
                 Найшвидкіша доставка міста,
                 <span class="text-brand-rose uppercase text-bold"
-                  >5 хвитлин, і букет готовий.</span
+                  >5 хвилин, і букет готовий.</span
                 >
                 Залишилось тільки отримати не лише букет, але й задоволення
               </p>
@@ -94,70 +94,76 @@
           </div>
         </div>
       </section>
-      <section class="section" id="promotions-and-news-section">
+      <section class="promotions section" id="promotions-and-news-section">
         <div class="container">
-          <h2 class="promotions-title section-title centered">
-            <span class="accent">Акції</span> та <br />
+          <h2 class="promotions__title section__title section__title--centered">
+            <span class="text-brand-rose">Акції</span> та <br />
             новинки
           </h2>
           <!-- Продумати як зробити і доставку і кульки  -->
           <!-- Безкоштовна доставка від 800 грн -->
-          <ul class="promotions-and-news-list">
-            <li class="promotions-and-news-item">
+          <ul class="promotions__list">
+            <li class="promotions__item">
               <article class="promotions-card">
                 <img
-                  class="promotions-image"
+                  class="promotions-card__photo"
                   src="./images/dilivery1.jpg"
                   alt="Free dilivery"
                 />
                 <div>
-                  <h3 class="promotions-news-title">Безкоштовна доставка</h3>
-                  <div class="promotions-text">
-                    <p class="sale-text">
-                      <span>акція!</span> Зроби замовлення <br />
-                      від 800 грн. та отримай безкоштовну доставку
-                    </p>
-                    <p>доставка до 800 грн оплачується за тарифами таксі</p>
-                  </div>
+                  <h3 class="promotions-card__title">Безкоштовна доставка</h3>
+                  <p class="promotions-card__text">
+                    <span>Aкція!</span> Зроби замовлення <br />
+                    від 800 грн. та отримай безкоштовну доставку
+                  </p>
+                  <p class="promotions-card__text">
+                    доставка до 800 грн оплачується за тарифами таксі
+                  </p>
                 </div>
               </article>
             </li>
-            <li class="promotions-and-news-item">
+            <li class="promotions__item">
               <article class="promotions-card">
-                <img class="promotions-image" src="./images/dilivery2.jpeg" alt="boble" />
+                <img
+                  class="promotions-card__photo"
+                  src="./images/dilivery2.jpeg"
+                  alt="boble"
+                />
                 <div>
-                  <h3 class="promotions-news-title">Повітряні кульки</h3>
-                  <div class="promotions-text">
-                    <p>Наші гелеві кульки подарують Вам найкращий настрій</p>
-                    <p>величезний осортимент повітряних кульок</p>
-                  </div>
+                  <h3 class="promotions-card__title">Повітряні кульки</h3>
+                  <p class="promotions-card__text">
+                    Наші гелеві кульки подарують Вам найкращий настрій
+                  </p>
+                  <p class="promotions-card__text">
+                    величезний осортимент повітряних кульок
+                  </p>
                 </div>
               </article>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section" id="flowers-section">
+      <section class="flowers section" id="flowers-section">
         <div class="container">
-          <h2 class="flowers-title section-title centered">Букети</h2>
-          <div class="flowers-container">
+          <h2 class="flowers__title section__title section__title--centered">Букети</h2>
+          <div class="flowers__container">
             <button class="carousel-button" type="button">
               <svg width="44" height="44">
                 <use href="./images/icon/icons.svg#icon-circle-left"></use>
               </svg>
             </button>
             <div>
-              <ul class="flowers-list">
-                <li class="flowers-item">
-                  <article class="format-card">
-                    <div class="flover-gradient-wrapper">
+              <ul class="flowers__list">
+                <li class="flowers__item">
+                  <article class="flowers-card">
+                    <div class="flowers-card__gradient-wrapper">
                       <img
-                        class="flowers-image"
+                        class="flowers-card__image"
                         src="./images/flover1.jpg"
                         alt="гарний букет квітів 1"
                       />
-                      <h3 class="flowers-card" lang="en">flowers 1</h3>
-                      <div class="format-text">
+                      <h3 class="flowers-card__title" lang="en">flowers 1</h3>
+                      <div class="flowers-card__text">
                         <p>гарні квіти, та їх опис 1</p>
                         <p>гарні квіти, та їх опис 2</p>
                         <p>
@@ -168,17 +174,17 @@
                     </div>
                   </article>
                 </li>
-                <li class="flowers-item">
-                  <article class="format-card">
-                    <div class="flover-gradient-wrapper">
+                <li class="flowers__item">
+                  <article class="flowers-card">
+                    <div class="flowers-card__gradient-wrapper">
                       <img
-                        class="flowers-image"
+                        class="flowers-card__image"
                         src="./images/flover2.jpg"
                         alt="гарний букет квітів 2"
                       />
 
-                      <h3 class="flowers-card" lang="en">flowers 2</h3>
-                      <div class="format-text">
+                      <h3 class="flowers-card__title" lang="en">flowers 2</h3>
+                      <div class="flowers-card__text">
                         <p>гарні квіти, та їх опис 1</p>
                         <p>гарні квіти, та їх опис 2</p>
                         <p>
@@ -189,17 +195,17 @@
                     </div>
                   </article>
                 </li>
-                <li class="flowers-item">
-                  <article class="format-card">
-                    <div class="flover-gradient-wrapper">
+                <li class="flowers__item">
+                  <article class="flowers-card">
+                    <div class="flowers-card__gradient-wrapper">
                       <img
-                        class="flowers-image"
+                        class="flowers-card__image"
                         src="./images/flover3.jpg"
                         alt="гарний букет квітів 3"
                       />
 
-                      <h3 class="flowers-card" lang="en">flowers 3</h3>
-                      <div class="format-text">
+                      <h3 class="flowers-card__title" lang="en">flowers 3</h3>
+                      <div class="flowers-card__text">
                         <p>гарні квіти, та їх опис 1</p>
                         <p>гарні квіти, та їх опис 2</p>
                         <p>
@@ -220,39 +226,43 @@
           </div>
         </div>
       </section>
-      <section class="section contact-section" id="contact-section">
+      <section class="contact-section section" id="contact-section">
         <div class="container">
-          <div class="contact-container">
-            <div class="contact-form">
-              <h2 class="contact-title">Замовляйте кращі букети, для кращих людей</h2>
-              <p>Заповни форму, щоб ми зв'язалтсь з тобою!</p>
+          <div class="contact-section__container">
+            <div class="contact-section__form">
+              <h2 class="contact-section__title">
+                Замовляйте кращі букети, для кращих людей
+              </h2>
+              <p>Заповни форму, щоб ми зв'язались з тобою!</p>
               <form name="contact-form" autocomplete="off" novalidate>
-                <div class="form-field">
-                  <label class="form-label visually-hidden" for="user-name">Ім'я</label>
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-name">Ім'я</label>
                   <input
-                    class="form-input"
+                    class="input__control"
                     type="text"
                     name="user-name"
                     id="user-name"
                     placeholder="Ім'я"
                   />
                 </div>
-                <div class="form-field">
-                  <label class="form-label visually-hidden" for="user-tel">Телефон</label>
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-tel"
+                    >Телефон</label
+                  >
                   <input
-                    class="form-input"
+                    class="input__control"
                     type="tel"
                     name="user-tel"
                     id="user-tel"
                     placeholder="Телефон"
                   />
                 </div>
-                <div class="form-field">
-                  <label class="form-label visually-hidden" for="user-email"
+                <div class="contact-section__form-field input">
+                  <label class="input__label visually-hidden" for="user-email"
                     >Електронна пошта</label
                   >
                   <input
-                    class="form-input"
+                    class="input__control"
                     type="email"
                     name="user-email"
                     id="user-email"
@@ -260,18 +270,20 @@
                   />
                 </div>
 
-                <button class="form-button button" type="submit">Замовити дзвінок</button>
+                <button class="contact-section__button button" type="submit">
+                  Замовити дзвінок
+                </button>
 
                 <p class="form-terms">
                   Натискаючи на кнопку я погоджуюсь
-                  <a class="form-terms-link" href="#">з політикою конфіденційності</a>
+                  <a class="form-terms__link" href="#">з політикою конфіденційності</a>
                 </p>
               </form>
 
               <!-- Form -->
             </div>
             <iframe
-              class="contact-map"
+              class="contact-section__map"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1321.5495297541788!2d34.60722460362146!3d48.5121657044179!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbdbeeeaf805fd%3A0x6e16a081bfaa23f0!2z0LrQstGW0YLQutC-0LLQsCDRgdGC0YPQtNGW0Y8gUEFUSU8!5e0!3m2!1suk!2sua!4v1706095197697!5m2!1suk!2sua"
               width="600"
               height="450"
@@ -359,14 +371,14 @@
 
     <div class="backdrop is-hidden">
       <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
+        <button class="modal__btn-close modal-btn-close-js" type="button">Close</button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку, та наш спеціаліст зв'яжеться з Вами!</p>
         <form name="modal-form" autocomplete="off">
-          <div class="form-field">
-            <label class="form-label visually-hidden" for="user-name">Ім'я</label>
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-name">Ім'я</label>
             <input
-              class="form-input"
+              class="input__control"
               type="text"
               name="user-name"
               id="user-name"
@@ -376,10 +388,10 @@
               required
             />
           </div>
-          <div class="form-field">
-            <label class="visually-hidden" for="user-tel">Телефон</label>
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-tel">Телефон</label>
             <input
-              class="form-input"
+              class="input__control"
               type="tel"
               name="user-tel"
               id="user-tel"
@@ -388,12 +400,12 @@
               required
             />
           </div>
-          <div class="form-field">
-            <label class="form-label visually-hidden" for="user-email"
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-email"
               >Електронна пошта
             </label>
             <input
-              class="form-input"
+              class="input__control"
               type="email"
               name="user-email"
               id="user-email"
@@ -414,11 +426,11 @@
             </label>
           </div> -->
 
-          <button class="form-button button" type="submit">Замовити дзвінок</button>
+          <button class="modal__button button" type="submit">Замовити дзвінок</button>
 
           <p class="form-terms">
             Натискаючи на кнопку я погоджуюсь
-            <a class="form-terms-link" href="#">з політикою конфіденційності</a>
+            <a class="form-terms__link" href="#">з політикою конфіденційності</a>
           </p>
         </form>
       </div>

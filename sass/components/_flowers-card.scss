@@ -1,0 +1,50 @@
+.flowers-card {
+  transition: transform 0.4s;
+
+  &:hover {
+    transform: scale(110%);
+  }
+
+  &__image {
+    position: absolute;
+    border-radius: 16px;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &__title {
+    color: var(--color-white);
+
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__text {
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__gradient-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+    height: 444px;
+    padding: 24px;
+    /* background-image: url(../images/flover1.jpg); */
+    /* Тінь: */
+    /* box-shadow: 2px 2px 4px 4px blueviolet; */
+    border-radius: 16px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(20, 0, 36, 0) 55%,
+      rgba(20, 0, 36, 0.4) 73%,
+      var(--color-brand-dark)
+    );
+  }
+}

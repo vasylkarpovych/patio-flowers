@@ -1,0 +1,43 @@
+/* Contact section */
+
+.contact-section {
+  padding-bottom: 96px;
+
+  &__container {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__map {
+    flex-shrink: 0;
+    border-radius: 16px;
+  }
+
+  &__form-field {
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    margin: 0 auto 16px;
+    display: block;
+  }
+
+  & .input__control:focus {
+    border-color: var(--color-brand-dark);
+    outline: none;
+  }
+
+  & .input__control {
+    border: 1px solid var(--color-brand-primary-rose);
+  }
+
+  & .input__control::placeholder {
+    color: var(--color-brand-primary-rose);
+    font-size: 16px;
+    line-height: 1.17;
+  }
+}

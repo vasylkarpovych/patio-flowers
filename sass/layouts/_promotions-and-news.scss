@@ -1,0 +1,36 @@
+/* Promotions and news  */
+
+.promotions {
+  &__title {
+    /* max-width: 520px; */
+    margin: 0 auto 80px;
+    position: relative;
+
+    &::after,
+    &::before {
+      position: absolute;
+      width: 360px;
+      border: 2px solid var(--color-brand-dark);
+      content: '';
+      bottom: 24px;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
