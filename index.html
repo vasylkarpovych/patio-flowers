@@ -17,14 +17,14 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-container">
-          <nav class="header-nav">
+        <div class="header__container">
+          <nav class="header__nav">
             <!-- logo -->
             <a href="/">
               <img src="./images/logoPatio555.svg" alt="Логотип магазину квітів PATIO" />
               <!-- <img src="https://picsum.photos/seed/picsum/600/300" alt="Логотип магазину квітів PATIO"> -->
             </a>
-            <ul class="header-menu">
+            <ul class="header__menu">
               <li>
                 <a class="nav-link" href="#sale-section">Про нас: наші традиції</a>
               </li>
@@ -50,8 +50,8 @@
       <!-- весь сайт -->
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title">
-            <span class="accent">PATIO</span>
+          <h1 class="hero-section__title">
+            <span class="text-brand-white hero-section___size-text">PATIO</span>
             твій<br />
             стильний букет
           </h1>
@@ -60,26 +60,34 @@
       <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
-          <ul class="advantages-list">
-            <li class="advantages-item">Великий досвід на ринку</li>
-            <li class="advantages-item">Доступні за бюжетом формати</li>
-            <li class="advantages-item">Досвідчена команда</li>
+          <ul class="advantages-section__list">
+            <li class="advantages-section__item">Великий досвід на ринку</li>
+            <li class="advantages-section__item">Доступні за бюжетом формати</li>
+            <li class="advantages-section__item">Досвідчена команда</li>
           </ul>
         </div>
       </section>
+
       <section class="sale-section section" id="sale-section">
         <div class="container">
-          <div class="sales-container">
-            <div class="sales-content">
-              <h2 class="sale-title section-title">Букети, які приємно дарувати</h2>
-              <p class="sale-text">
-                <span>Стильні, трендові, актуальні букети</span> в яких закохуєшся з
-                першого погляду. Подаруй коханій людині більше ніж квіти
+          <div class="sale-section__sales-container">
+            <div class="sale-section__sales-content">
+              <h2 class="sale-section__sale-title section-title">
+                Букети, які приємно дарувати
+              </h2>
+              <p>
+                <span class="text-brand-rose uppercase text-bold"
+                  >Стильні, трендові, актуальні букети</span
+                >
+                в яких закохуєшся з першого погляду. Подаруй коханій людині більше ніж
+                квіти
               </p>
-              <p class="sale-text sale-text-limited">
+              <p class="sale-section__text--limited">
                 Найшвидкіша доставка міста,
-                <span>5 хвитлин, і букет готовий.</span> Залишилось тільки отримати не
-                лише букет, але й задоволення
+                <span class="text-brand-rose uppercase text-bold"
+                  >5 хвитлин, і букет готовий.</span
+                >
+                Залишилось тільки отримати не лише букет, але й задоволення
               </p>
             </div>
             <img src="./images/flowers1.jpg" alt="Фото з красивим букетом" />
@@ -98,7 +106,7 @@
             <li class="promotions-and-news-item">
               <article class="promotions-card">
                 <img
-                  class="sale-image"
+                  class="promotions-image"
                   src="./images/dilivery1.jpg"
                   alt="Free dilivery"
                 />
@@ -116,7 +124,7 @@
             </li>
             <li class="promotions-and-news-item">
               <article class="promotions-card">
-                <img class="sale-image" src="./images/dilivery2.jpeg" alt="boble" />
+                <img class="promotions-image" src="./images/dilivery2.jpeg" alt="boble" />
                 <div>
                   <h3 class="promotions-news-title">Повітряні кульки</h3>
                   <div class="promotions-text">

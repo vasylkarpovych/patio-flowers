@@ -2,10 +2,38 @@
 
 .sale-section {
   padding-top: 96px;
+
+  &__sales-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  & img {
+    width: 310px;
+  }
+
+  &__sales-content {
+    max-width: 710px;
+  }
+
+  &__sale-title {
+    margin-bottom: 42px;
+  }
+
+  &__text {
+    &--limited {
+      max-width: 370px;
+    }
+  }
 }
 
-.sale-title {
-  margin-bottom: 42px;
+.promotions-image {
+  //change name
+  max-width: 300px;
+  max-height: 450px;
+  border-radius: 5px 5px 5px 250px;
+  box-shadow: -16px 16px 0 0 white, -16px 16px 0 2px var(--color-brand-primary-rose);
 }
 
 .promotions-and-news-list {
@@ -29,30 +57,6 @@
 
 .promotions-text p:last-child {
   margin-bottom: 0;
-}
-
-.sale-text span {
-  color: var(--color-brand-primary-rose);
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.sale-text.sale-text-limited {
-  max-width: 370px;
-}
-
-.sales-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.sales-content {
-  max-width: 710px;
-}
-
-.sales-container img {
-  width: 310px;
 }
 
 .promotions-news-title {
@@ -82,11 +86,4 @@
 
 .promotions-title::after {
   right: 0;
-}
-
-.sale-image {
-  max-width: 300px;
-  max-height: 450px;
-  border-radius: 5px 5px 5px 250px;
-  box-shadow: -16px 16px 0 0 white, -16px 16px 0 2px var(--color-brand-primary-rose);
 }
