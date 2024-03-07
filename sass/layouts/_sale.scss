@@ -1,16 +1,27 @@
 /* Sale section, */
 
 .sale-section {
-  padding-top: 96px;
+  padding-top: 40px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-top: 96px;
+  }
 
   &__sales-container {
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    align-items: flex-start;
   }
 
-  & img {
-    width: 310px;
+  &__image {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+
+      width: 310px;
+      border-radius: 400px 400px 0 0;
+    }
   }
 
   &__sales-content {

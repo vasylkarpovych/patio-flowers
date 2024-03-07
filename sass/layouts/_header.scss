@@ -4,8 +4,19 @@
   position: absolute;
   left: 0;
   right: 0;
-  padding-top: 30px;
-  /* background-color: #b4b4b4; remove */
+  padding-top: 16px;
+
+  & img {
+    width: 100px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 30px;
+
+    & img {
+      width: 200px;
+    }
+  }
 
   &__container {
     display: flex;
@@ -21,13 +32,37 @@
   }
 
   &__menu {
-    display: flex;
-    gap: 64px;
-    flex-grow: 1;
-    justify-content: center;
+    display: none;
+
+    // & img {
+    //   width: 200px;
+    // }
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 64px;
+      flex-grow: 1;
+      justify-content: center;
+    }
   }
 
-  & img {
-    width: 200px;
+  &__button {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+
+  &__burger {
+    background-color: transparent;
+    border: none;
+    fill: var(--color-white);
+    width: 24px;
+    height: 24px;
+    padding: 0;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 }

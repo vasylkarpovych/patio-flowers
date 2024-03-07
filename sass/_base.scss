@@ -10,10 +10,15 @@ body {
   color: var(--color-brand-dark);
   /* font-family: 'comic sans ms', sans-serif; */
   font-family: 'poppins', sans-serif;
-  tab-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 1.5;
   margin: 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 
 h1,
