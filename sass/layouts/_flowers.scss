@@ -16,8 +16,4 @@
     gap: 30px;
     flex-wrap: wrap;
   }
-
-  &__item {
-    flex-basis: calc((100% - 60px) / 3);
-  }
 }
