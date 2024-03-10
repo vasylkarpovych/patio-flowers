@@ -1,34 +1,5 @@
 /* Footer. Adress link */
 
-.footer-container {
-  display: flex;
-  gap: 20px;
-}
-
-.footer-nav,
-.footer-address {
-  flex-basis: 50%;
-  display: flex;
-  gap: 20px;
-}
-
-.footer-menu,
-.footer-logo {
-  flex-basis: 50%;
-}
-
-.address-list,
-.address-info-copyright {
-  flex-basis: 50%;
-}
-
-.address-link {
-  color: var(--color-white);
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 300;
-}
-
 .footer {
   position: relative;
   padding: 30px;
@@ -37,54 +8,95 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
 
-.footer::before,
-.footer::after {
-  position: absolute;
-  background-image: url(../images/decor-girl.png);
-  content: '';
-  width: 100px;
-  height: 180px;
-  background-size: 80%;
-  background-repeat: no-repeat;
-  bottom: -15px;
-}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
-.footer::before {
-  left: 0px;
-}
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+  }
 
-.footer::after {
-  right: 0;
-}
+  &__nav,
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
 
-.address-link:hover {
-  color: var(--color-brand-primary-rose);
-  /* font-size: 18px;   ТУТ при наведенні збільшується розмір*/
-}
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+    }
+  }
 
-.address-icon {
-  fill: var(--color-white);
-}
+  &__menu,
+  &__logo {
+    flex-basis: 50%;
+  }
 
-.address-icon:hover {
-  fill: var(--color-brand-primary-rose);
-  /* stroke: var(--color-brand-primary-rose); */
-}
+  &::before,
+  &::after {
+    position: absolute;
+    background-image: url(../images/decor-girl.png);
+    content: '';
+    width: 100px;
+    height: 180px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    bottom: -15px;
+  }
 
-.address-copyright {
-  font-size: 14px;
-}
+  &::before {
+    left: 0px;
+  }
 
-.footer img {
-  width: 200px;
-}
+  &::after {
+    right: 0;
+  }
 
-.footer-menu .nav-link {
-  color: var(--color-white);
-}
+  & img {
+    width: 200px;
+  }
 
-.footer-menu .nav-link:hover {
-  color: var(--color-brand-primary-rose);
+  &__menu .nav-link {
+    color: var(--color-white);
+  }
+
+  &__menu .nav-link:hover {
+    color: var(--color-brand-primary-rose);
+  }
+
+  &__address-list,
+  &__address-info-copyright {
+    flex-basis: 50%;
+  }
+
+  &__address-link {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  &__address-link:hover {
+    color: var(--color-brand-primary-rose);
+    /* font-size: 18px;   ТУТ при наведенні збільшується розмір*/
+  }
+
+  &__address-icon {
+    fill: var(--color-white);
+  }
+
+  &__address-icon:hover {
+    fill: var(--color-brand-primary-rose);
+    /* stroke: var(--color-brand-primary-rose); */
+  }
+
+  &__address-copyright {
+    font-size: 14px;
+    color: var(--color-white);
+  }
 }
